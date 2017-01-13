@@ -1,0 +1,2 @@
+# put ansible groups variables here (treat is as defaults that can be overridden by specific group variables)
+---

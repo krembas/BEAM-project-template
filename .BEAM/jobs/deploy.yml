@@ -1,0 +1,17 @@
+# Template of ansible playbook for product deploy job
+#
+# Just use below play as template for adding additional plays with given
+# hosts/groups to perform specified actions from roles/tasks on them
+#
+# It's just ansible playbook - you can put here everything related to playbooks that is supported by ansible
+---
+- hosts: all
+  serial: 1
+
+  roles:
+    #--------------------------------------------------------------------------------------------------------------------
+    - role: beam.job.deploy.product.init  # always reqired as first role in play to initialize it as "product deploy job"
+    #--------------------------------------------------------------------------------------------------------------------
+    # Put all roles used for product deploy job below:
+    - role: beam.instance-common
+    - role: product-common

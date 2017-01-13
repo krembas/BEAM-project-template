@@ -1,0 +1,2 @@
+# This folder contains product jobs that BEAM passes to ansible as its playbooks and roles during its runtime.
+# Everything related to ansible playbooks that is supported by ansible can be put here.

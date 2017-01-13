@@ -1,0 +1,2 @@
+# This folder contains product environments subfolders that BEAM passes to ansible as its inventories during its runtime.
+# Everything related to ansible inventories that is supported by ansible can be put here.
