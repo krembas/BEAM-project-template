@@ -1,2 +1,0 @@
-# This folder contains all product-related (used only for this product) ansible roles used by product jobs playbooks that BEAM passes to ansible during its runtime.
-# Everything related to ansible roles that is supported by ansible can be put here.

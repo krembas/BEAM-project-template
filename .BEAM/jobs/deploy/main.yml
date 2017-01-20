@@ -1,0 +1,20 @@
+# Template of ansible playbook for project deploy job.
+#
+# Just use below play as template for adding additional plays with given
+# hosts/groups to perform specified actions from roles/tasks on them.
+#
+# It's just ansible playbook - you can put here everything related to playbooks
+# that is supported by ansible.
+---
+#------------------------------------------------------------------------------#
+#    *** This haiku play is required as first play in any job playbook ***
+# It validates job args, initializes playbook as apropriate "job" and provides
+# required vars from BEAM, available as BEAM_VARS in whole playbook (and also
+# all plays/roles it includes, which may require them to run properly)
+#==============================================================================#
+- { hosts: "localhost:all" ,gather_facts: no ,roles: [beam-job-init] }
+#==============================================================================#
+
+# Put here your playbook content  needed for project component deploy job on given hosts.
+
+

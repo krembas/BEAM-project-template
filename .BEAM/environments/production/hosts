@@ -1,12 +1,12 @@
-# Place for ansible inventory that defines BEAM environment.
+# Place for ansible inventory that defines BEAM environment (production environment in this case).
 #
 # BEAM requires special convention - there must be groups that has
-# same names as product's projects, that contains all hosts (or groups
-# of hosts etc) related to given project.
+# same names as product components, that contains all hosts (or groups
+# of hosts etc) related to given project component.
 #
 # Rest is just up to you - it's just old good plain ansible inventory...
 #
-# Example: Assume we hawe product named SomeProduct with two projects named
+# Example: Assume we have project with two project components named
 # Backend & Frontend. Then example of simple environment can looks like:
 #
 # [Backend]
@@ -15,7 +15,3 @@
 #
 # [Frontend]
 # frontend_host         ansible_host=<...>, ...
-
-
-
-
